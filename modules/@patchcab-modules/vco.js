@@ -8,28 +8,32 @@ function create_default_slot(ctx) {
 	let knob0;
 	let updating_value;
 	let t0;
+	let button;
+	let t2;
 	let knob1;
 	let updating_value_1;
-	let t1;
+	let t3;
 	let switch0;
 	let updating_value_2;
-	let t2;
+	let t4;
 	let switch1;
 	let updating_value_3;
-	let t3;
+	let t5;
 	let switch2;
 	let updating_value_4;
-	let t4;
+	let t6;
 	let switch3;
 	let updating_value_5;
-	let t5;
+	let t7;
 	let patch0;
-	let t6;
+	let t8;
 	let patch1;
 	let current;
+	let mounted;
+	let dispose;
 
 	function knob0_value_binding(value) {
-		/*knob0_value_binding*/ ctx[4].call(null, value);
+		/*knob0_value_binding*/ ctx[5].call(null, value);
 	}
 
 	let knob0_props = {
@@ -49,7 +53,7 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(knob0, "value", knob0_value_binding));
 
 	function knob1_value_binding(value) {
-		/*knob1_value_binding*/ ctx[5].call(null, value);
+		/*knob1_value_binding*/ ctx[6].call(null, value);
 	}
 
 	let knob1_props = {
@@ -70,7 +74,7 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(knob1, "value", knob1_value_binding));
 
 	function switch0_value_binding(value) {
-		/*switch0_value_binding*/ ctx[6].call(null, value);
+		/*switch0_value_binding*/ ctx[7].call(null, value);
 	}
 
 	let switch0_props = { x: 20, y: 220, label: "sin", set: "sine" };
@@ -83,7 +87,7 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(switch0, "value", switch0_value_binding));
 
 	function switch1_value_binding(value) {
-		/*switch1_value_binding*/ ctx[7].call(null, value);
+		/*switch1_value_binding*/ ctx[8].call(null, value);
 	}
 
 	let switch1_props = {
@@ -101,7 +105,7 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(switch1, "value", switch1_value_binding));
 
 	function switch2_value_binding(value) {
-		/*switch2_value_binding*/ ctx[8].call(null, value);
+		/*switch2_value_binding*/ ctx[9].call(null, value);
 	}
 
 	let switch2_props = {
@@ -119,7 +123,7 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(switch2, "value", switch2_value_binding));
 
 	function switch3_value_binding(value) {
-		/*switch3_value_binding*/ ctx[9].call(null, value);
+		/*switch3_value_binding*/ ctx[10].call(null, value);
 	}
 
 	let switch3_props = {
@@ -161,37 +165,50 @@ function create_default_slot(ctx) {
 		c() {
 			__sv.create_component(knob0.$$.fragment);
 			t0 = __sv.space();
-			__sv.create_component(knob1.$$.fragment);
-			t1 = __sv.space();
-			__sv.create_component(switch0.$$.fragment);
+			button = __sv.element("button");
+			button.textContent = "dbg";
 			t2 = __sv.space();
-			__sv.create_component(switch1.$$.fragment);
+			__sv.create_component(knob1.$$.fragment);
 			t3 = __sv.space();
-			__sv.create_component(switch2.$$.fragment);
+			__sv.create_component(switch0.$$.fragment);
 			t4 = __sv.space();
-			__sv.create_component(switch3.$$.fragment);
+			__sv.create_component(switch1.$$.fragment);
 			t5 = __sv.space();
-			__sv.create_component(patch0.$$.fragment);
+			__sv.create_component(switch2.$$.fragment);
 			t6 = __sv.space();
+			__sv.create_component(switch3.$$.fragment);
+			t7 = __sv.space();
+			__sv.create_component(patch0.$$.fragment);
+			t8 = __sv.space();
 			__sv.create_component(patch1.$$.fragment);
+			__sv.set_style(button, "color", "#111");
+			__sv.set_style(button, "background-color", "#0fa");
+			__sv.set_style(button, "border-radius", "20px");
 		},
 		m(target, anchor) {
 			__sv.mount_component(knob0, target, anchor);
 			__sv.insert(target, t0, anchor);
-			__sv.mount_component(knob1, target, anchor);
-			__sv.insert(target, t1, anchor);
-			__sv.mount_component(switch0, target, anchor);
+			__sv.insert(target, button, anchor);
 			__sv.insert(target, t2, anchor);
-			__sv.mount_component(switch1, target, anchor);
+			__sv.mount_component(knob1, target, anchor);
 			__sv.insert(target, t3, anchor);
-			__sv.mount_component(switch2, target, anchor);
+			__sv.mount_component(switch0, target, anchor);
 			__sv.insert(target, t4, anchor);
-			__sv.mount_component(switch3, target, anchor);
+			__sv.mount_component(switch1, target, anchor);
 			__sv.insert(target, t5, anchor);
-			__sv.mount_component(patch0, target, anchor);
+			__sv.mount_component(switch2, target, anchor);
 			__sv.insert(target, t6, anchor);
+			__sv.mount_component(switch3, target, anchor);
+			__sv.insert(target, t7, anchor);
+			__sv.mount_component(patch0, target, anchor);
+			__sv.insert(target, t8, anchor);
 			__sv.mount_component(patch1, target, anchor);
 			current = true;
+
+			if (!mounted) {
+				dispose = __sv.listen(button, "click", /*test*/ ctx[4]);
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
 			const knob0_changes = {};
@@ -281,19 +298,23 @@ function create_default_slot(ctx) {
 		d(detaching) {
 			__sv.destroy_component(knob0, detaching);
 			if (detaching) __sv.detach(t0);
-			__sv.destroy_component(knob1, detaching);
-			if (detaching) __sv.detach(t1);
-			__sv.destroy_component(switch0, detaching);
+			if (detaching) __sv.detach(button);
 			if (detaching) __sv.detach(t2);
-			__sv.destroy_component(switch1, detaching);
+			__sv.destroy_component(knob1, detaching);
 			if (detaching) __sv.detach(t3);
-			__sv.destroy_component(switch2, detaching);
+			__sv.destroy_component(switch0, detaching);
 			if (detaching) __sv.detach(t4);
-			__sv.destroy_component(switch3, detaching);
+			__sv.destroy_component(switch1, detaching);
 			if (detaching) __sv.detach(t5);
-			__sv.destroy_component(patch0, detaching);
+			__sv.destroy_component(switch2, detaching);
 			if (detaching) __sv.detach(t6);
+			__sv.destroy_component(switch3, detaching);
+			if (detaching) __sv.detach(t7);
+			__sv.destroy_component(patch0, detaching);
+			if (detaching) __sv.detach(t8);
 			__sv.destroy_component(patch1, detaching);
+			mounted = false;
+			dispose();
 		}
 	};
 }
@@ -321,7 +342,7 @@ function create_fragment(ctx) {
 		p(ctx, [dirty]) {
 			const faceplate_changes = {};
 
-			if (dirty & /*$$scope, oscillator, scale, state*/ 1031) {
+			if (dirty & /*$$scope, oscillator, scale, state*/ 2055) {
 				faceplate_changes.$$scope = { dirty, ctx };
 			}
 
@@ -352,6 +373,7 @@ function instance($$self, $$props, $$invalidate) {
 	const scale = new Tone.Scale(MIN, MAX);
 
 	const onConnect = nodes => {
+		// console.log(scale)
 		if (nodes) {
 			scale.connect(oscillator.frequency);
 		} else {
@@ -360,6 +382,11 @@ function instance($$self, $$props, $$invalidate) {
 			$$invalidate(1, oscillator.frequency.value = state.freq, oscillator);
 		}
 	};
+
+	// let patch
+	const test = e => {
+		
+	}; // console.log(scale)
 
 	function knob0_value_binding(value) {
 		state.freq = value;
@@ -397,6 +424,8 @@ function instance($$self, $$props, $$invalidate) {
 
 	$$self.$$.update = () => {
 		if ($$self.$$.dirty & /*state*/ 1) {
+			// let node = new Waveform(512);
+			// let node = new Signal(100)
 			 $$invalidate(1, oscillator.frequency.value = state.freq, oscillator);
 		}
 
@@ -418,6 +447,7 @@ function instance($$self, $$props, $$invalidate) {
 		oscillator,
 		scale,
 		onConnect,
+		test,
 		knob0_value_binding,
 		knob1_value_binding,
 		switch0_value_binding,

@@ -1,0 +1,394 @@
+[
+  {
+    "Station Name": "Flatbush Ave.- Brooklyn College",
+    "Median Income 2011": 37073,
+    "Month Income": 3089.42,
+    "Latitude": 40.63275,
+    "Longitude": -73.947375,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Newkirk Ave.",
+    "Median Income 2011": 40096,
+    "Month Income": 3341.33,
+    "Latitude": 40.639924,
+    "Longitude": -73.948161,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Beverly Rd.",
+    "Median Income 2011": 34019,
+    "Month Income": 2834.92,
+    "Latitude": 40.645046,
+    "Longitude": -73.948684,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Church Ave.",
+    "Median Income 2011": 33816,
+    "Month Income": 2818,
+    "Latitude": 40.650748,
+    "Longitude": -73.949384,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Winthrop St.",
+    "Median Income 2011": 44444,
+    "Month Income": 3703.67,
+    "Latitude": 40.657184,
+    "Longitude": -73.949976,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Sterling St.",
+    "Median Income 2011": 37239,
+    "Month Income": 3103.25,
+    "Latitude": 40.663226,
+    "Longitude": -73.95067,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "President St.",
+    "Median Income 2011": 36607,
+    "Month Income": 3050.58,
+    "Latitude": 40.668145,
+    "Longitude": -73.950458,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Franklin Ave.",
+    "Median Income 2011": 35233,
+    "Month Income": 2936.08,
+    "Latitude": 40.670732,
+    "Longitude": -73.957696,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Eastern Parkway- Brooklyn Museum",
+    "Median Income 2011": 59617,
+    "Month Income": 4968.08,
+    "Latitude": 40.672122,
+    "Longitude": -73.964154,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Grand Army Plaza",
+    "Median Income 2011": 109329,
+    "Month Income": 9110.75,
+    "Latitude": 40.67511,
+    "Longitude": -73.970822,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Bergen St.",
+    "Median Income 2011": 88036,
+    "Month Income": 7336.33,
+    "Latitude": 40.680695,
+    "Longitude": -73.974748,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Atlantic Ave.- Barclays Center",
+    "Median Income 2011": 87875,
+    "Month Income": 7322.92,
+    "Latitude": 40.683928,
+    "Longitude": -73.978412,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Nevins St.",
+    "Median Income 2011": 83688,
+    "Month Income": 6974,
+    "Latitude": 40.688085,
+    "Longitude": -73.980243,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Hoyt St.",
+    "Median Income 2011": 66023,
+    "Month Income": 5501.92,
+    "Latitude": 40.690931,
+    "Longitude": -73.98525,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Borough Hall",
+    "Median Income 2011": 79231,
+    "Month Income": 6602.58,
+    "Latitude": 40.692548,
+    "Longitude": -73.990099,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Clark St.",
+    "Median Income 2011": 91250,
+    "Month Income": 7604.17,
+    "Latitude": 40.697649,
+    "Longitude": -73.99306,
+    "Borough": "Brooklyn"
+  },
+  {
+    "Station Name": "Wall St.",
+    "Median Income 2011": 125124,
+    "Month Income": 10427,
+    "Latitude": 40.707431,
+    "Longitude": -74.008778,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "Fulton St.",
+    "Median Income 2011": 114412,
+    "Month Income": 9534.33,
+    "Latitude": 40.711026,
+    "Longitude": -74.00919,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "Park Place",
+    "Median Income 2011": 205192,
+    "Month Income": 17099.33,
+    "Latitude": 40.712712,
+    "Longitude": -74.007766,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "Chambers St.",
+    "Median Income 2011": 205192,
+    "Month Income": 17099.33,
+    "Latitude": 40.715576,
+    "Longitude": -74.009031,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "14 St.- 7 Ave.",
+    "Median Income 2011": 94292,
+    "Month Income": 7857.67,
+    "Latitude": 40.737826,
+    "Longitude": -74.000201,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "34 St.- Penn Station",
+    "Median Income 2011": 155278,
+    "Month Income": 12939.83,
+    "Latitude": 40.75102,
+    "Longitude": -73.990323,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "Times Square- 42 St.",
+    "Median Income 2011": 118487,
+    "Month Income": 9873.92,
+    "Latitude": 40.754301,
+    "Longitude": -73.986623,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "72 St.",
+    "Median Income 2011": 115833,
+    "Month Income": 9652.75,
+    "Latitude": 40.779146,
+    "Longitude": -73.981822,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "96 St.",
+    "Median Income 2011": 75481,
+    "Month Income": 6290.08,
+    "Latitude": 40.794312,
+    "Longitude": -73.972015,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "Central Park North (110 St.)",
+    "Median Income 2011": 39338,
+    "Month Income": 3278.17,
+    "Latitude": 40.799033,
+    "Longitude": -73.952058,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "116 St.",
+    "Median Income 2011": 55469,
+    "Month Income": 4622.42,
+    "Latitude": 40.802111,
+    "Longitude": -73.949437,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "125 St.",
+    "Median Income 2011": 64286,
+    "Month Income": 5357.17,
+    "Latitude": 40.807875,
+    "Longitude": -73.945229,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "135 St.",
+    "Median Income 2011": 55591,
+    "Month Income": 4632.58,
+    "Latitude": 40.814188,
+    "Longitude": -73.940618,
+    "Borough": "Manhattan"
+  },
+  {
+    "Station Name": "149 St.- Grand Concourse",
+    "Median Income 2011": 16580,
+    "Month Income": 1381.67,
+    "Latitude": 40.818405,
+    "Longitude": -73.927101,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "3 Ave.- 149 St.",
+    "Median Income 2011": 23670,
+    "Month Income": 1972.5,
+    "Latitude": 40.816265,
+    "Longitude": -73.917456,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Jackson Ave.",
+    "Median Income 2011": 28770,
+    "Month Income": 2397.5,
+    "Latitude": 40.816873,
+    "Longitude": -73.907379,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Prospect Ave.",
+    "Median Income 2011": 26250,
+    "Month Income": 2187.5,
+    "Latitude": 40.819684,
+    "Longitude": -73.901348,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Intervale Ave.",
+    "Median Income 2011": 17723,
+    "Month Income": 1476.92,
+    "Latitude": 40.8224,
+    "Longitude": -73.896508,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Simpson St.",
+    "Median Income 2011": 14940,
+    "Month Income": 1245,
+    "Latitude": 40.824358,
+    "Longitude": -73.892724,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Freeman St.",
+    "Median Income 2011": 17614,
+    "Month Income": 1467.83,
+    "Latitude": 40.830177,
+    "Longitude": -73.891482,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "174 St.",
+    "Median Income 2011": 18261,
+    "Month Income": 1521.75,
+    "Latitude": 40.837306,
+    "Longitude": -73.887287,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "West Farms Square- E Tremont Ave.",
+    "Median Income 2011": 14191,
+    "Month Income": 1182.58,
+    "Latitude": 40.841078,
+    "Longitude": -73.879397,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "E 180 St.",
+    "Median Income 2011": 13750,
+    "Month Income": 1145.83,
+    "Latitude": 40.841453,
+    "Longitude": -73.872892,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Bronx Park East",
+    "Median Income 2011": 34375,
+    "Month Income": 2864.58,
+    "Latitude": 40.849128,
+    "Longitude": -73.868213,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Pelham Parkway",
+    "Median Income 2011": 39609,
+    "Month Income": 3300.75,
+    "Latitude": 40.858029,
+    "Longitude": -73.867481,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Allerton Ave.",
+    "Median Income 2011": 39609,
+    "Month Income": 3300.75,
+    "Latitude": 40.865462,
+    "Longitude": -73.867352,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Burke Ave.",
+    "Median Income 2011": 39611,
+    "Month Income": 3300.92,
+    "Latitude": 40.871215,
+    "Longitude": -73.867043,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Gun Hill Rd.",
+    "Median Income 2011": 36786,
+    "Month Income": 3065.5,
+    "Latitude": 40.877779,
+    "Longitude": -73.866185,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "219 St.",
+    "Median Income 2011": 34010,
+    "Month Income": 2834.17,
+    "Latitude": 40.883439,
+    "Longitude": -73.862743,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "225 St.",
+    "Median Income 2011": 37885,
+    "Month Income": 3157.08,
+    "Latitude": 40.88766,
+    "Longitude": -73.860444,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "233 St.",
+    "Median Income 2011": 47861,
+    "Month Income": 3988.42,
+    "Latitude": 40.89337,
+    "Longitude": -73.857265,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Nereid Ave.",
+    "Median Income 2011": 42880,
+    "Month Income": 3573.33,
+    "Latitude": 40.898323,
+    "Longitude": -73.854288,
+    "Borough": "Bronx"
+  },
+  {
+    "Station Name": "Wakefield- 241 St.",
+    "Median Income 2011": 38261,
+    "Month Income": 3188.42,
+    "Latitude": 40.903509,
+    "Longitude": -73.850124,
+    "Borough": "Bronx"
+  }
+]

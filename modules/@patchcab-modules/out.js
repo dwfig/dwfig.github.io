@@ -8,16 +8,20 @@ function create_default_slot(ctx) {
 	let volume_1;
 	let updating_value;
 	let t0;
+	let button;
+	let t2;
 	let switch_1;
 	let updating_value_1;
-	let t1;
+	let t3;
 	let patch0;
-	let t2;
+	let t4;
 	let patch1;
 	let current;
+	let mounted;
+	let dispose;
 
 	function volume_1_value_binding(value) {
-		/*volume_1_value_binding*/ ctx[7].call(null, value);
+		/*volume_1_value_binding*/ ctx[8].call(null, value);
 	}
 
 	let volume_1_props = {
@@ -36,7 +40,7 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(volume_1, "value", volume_1_value_binding));
 
 	function switch_1_value_binding(value) {
-		/*switch_1_value_binding*/ ctx[8].call(null, value);
+		/*switch_1_value_binding*/ ctx[9].call(null, value);
 	}
 
 	let switch_1_props = { x: 40, y: 280, label: "on" };
@@ -73,21 +77,34 @@ function create_default_slot(ctx) {
 		c() {
 			__sv.create_component(volume_1.$$.fragment);
 			t0 = __sv.space();
-			__sv.create_component(switch_1.$$.fragment);
-			t1 = __sv.space();
-			__sv.create_component(patch0.$$.fragment);
+			button = __sv.element("button");
+			button.textContent = "dbg";
 			t2 = __sv.space();
+			__sv.create_component(switch_1.$$.fragment);
+			t3 = __sv.space();
+			__sv.create_component(patch0.$$.fragment);
+			t4 = __sv.space();
 			__sv.create_component(patch1.$$.fragment);
+			__sv.set_style(button, "color", "#111");
+			__sv.set_style(button, "background-color", "#0fa");
+			__sv.set_style(button, "border-radius", "20px");
 		},
 		m(target, anchor) {
 			__sv.mount_component(volume_1, target, anchor);
 			__sv.insert(target, t0, anchor);
-			__sv.mount_component(switch_1, target, anchor);
-			__sv.insert(target, t1, anchor);
-			__sv.mount_component(patch0, target, anchor);
+			__sv.insert(target, button, anchor);
 			__sv.insert(target, t2, anchor);
+			__sv.mount_component(switch_1, target, anchor);
+			__sv.insert(target, t3, anchor);
+			__sv.mount_component(patch0, target, anchor);
+			__sv.insert(target, t4, anchor);
 			__sv.mount_component(patch1, target, anchor);
 			current = true;
+
+			if (!mounted) {
+				dispose = __sv.listen(button, "click", /*test*/ ctx[7]);
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
 			const volume_1_changes = {};
@@ -130,11 +147,15 @@ function create_default_slot(ctx) {
 		d(detaching) {
 			__sv.destroy_component(volume_1, detaching);
 			if (detaching) __sv.detach(t0);
-			__sv.destroy_component(switch_1, detaching);
-			if (detaching) __sv.detach(t1);
-			__sv.destroy_component(patch0, detaching);
+			if (detaching) __sv.detach(button);
 			if (detaching) __sv.detach(t2);
+			__sv.destroy_component(switch_1, detaching);
+			if (detaching) __sv.detach(t3);
+			__sv.destroy_component(patch0, detaching);
+			if (detaching) __sv.detach(t4);
 			__sv.destroy_component(patch1, detaching);
+			mounted = false;
+			dispose();
 		}
 	};
 }
@@ -173,7 +194,7 @@ function create_fragment(ctx) {
 		p(ctx, [dirty]) {
 			const faceplate_changes = {};
 
-			if (dirty & /*$$scope, node, on, volume*/ 4103) {
+			if (dirty & /*$$scope, node, on, volume*/ 8199) {
 				faceplate_changes.$$scope = { dirty, ctx };
 			}
 
@@ -275,6 +296,10 @@ function instance($$self, $$props, $$invalidate) {
 		};
 	}));
 
+	const test = e => {
+		console.log(node.gain);
+	}; // console.log(scale.output.value)
+
 	function volume_1_value_binding(value) {
 		volume = value;
 		$$invalidate(0, volume);
@@ -305,6 +330,7 @@ function instance($$self, $$props, $$invalidate) {
 		scale,
 		onConnect,
 		onKey,
+		test,
 		volume_1_value_binding,
 		switch_1_value_binding
 	];

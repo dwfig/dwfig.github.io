@@ -20,16 +20,24 @@ function create_default_slot(ctx) {
 	let patch0;
 	let t4;
 	let patch1;
+	let t5;
+	let patch2;
+	let t6;
+	let patch3;
+	let t7;
+	let patch4;
+	let t8;
+	let patch5;
 	let current;
 
 	function knob0_value_binding(value) {
-		/*knob0_value_binding*/ ctx[3].call(null, value);
+		/*knob0_value_binding*/ ctx[8].call(null, value);
 	}
 
 	let knob0_props = {
 		size: "s",
 		label: "attack",
-		x: 27,
+		x: 44,
 		y: 60,
 		min: 0,
 		max: 2,
@@ -45,13 +53,13 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(knob0, "value", knob0_value_binding));
 
 	function knob1_value_binding(value) {
-		/*knob1_value_binding*/ ctx[4].call(null, value);
+		/*knob1_value_binding*/ ctx[9].call(null, value);
 	}
 
 	let knob1_props = {
 		size: "s",
 		label: "decay",
-		x: 27,
+		x: 44,
 		y: 122,
 		min: 0,
 		max: 2,
@@ -67,13 +75,13 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(knob1, "value", knob1_value_binding));
 
 	function knob2_value_binding(value) {
-		/*knob2_value_binding*/ ctx[5].call(null, value);
+		/*knob2_value_binding*/ ctx[10].call(null, value);
 	}
 
 	let knob2_props = {
 		size: "s",
 		label: "sustain",
-		x: 27,
+		x: 44,
 		y: 186,
 		min: 0,
 		max: 1,
@@ -89,13 +97,13 @@ function create_default_slot(ctx) {
 	__sv.binding_callbacks.push(() => __sv.bind(knob2, "value", knob2_value_binding));
 
 	function knob3_value_binding(value) {
-		/*knob3_value_binding*/ ctx[6].call(null, value);
+		/*knob3_value_binding*/ ctx[11].call(null, value);
 	}
 
 	let knob3_props = {
 		size: "s",
 		label: "release",
-		x: 27,
+		x: 44,
 		y: 250,
 		min: 0,
 		max: 5,
@@ -112,15 +120,52 @@ function create_default_slot(ctx) {
 
 	patch0 = new Patch({
 			props: {
-				label: "gate",
-				x: 20,
-				y: 320,
-				name: "gate",
-				input: /*bang*/ ctx[2]
+				x: 14,
+				y: 70,
+				name: "attack",
+				input: /*anode*/ ctx[2],
+				onConnect: /*onConnect*/ ctx[6]
 			}
 		});
 
 	patch1 = new Patch({
+			props: {
+				x: 14,
+				y: 132,
+				name: "decay",
+				input: /*dnode*/ ctx[3]
+			}
+		});
+
+	patch2 = new Patch({
+			props: {
+				x: 14,
+				y: 196,
+				name: "sustain",
+				input: /*snode*/ ctx[4]
+			}
+		});
+
+	patch3 = new Patch({
+			props: {
+				x: 14,
+				y: 260,
+				name: "release",
+				input: /*rnode*/ ctx[5]
+			}
+		});
+
+	patch4 = new Patch({
+			props: {
+				label: "gate",
+				x: 20,
+				y: 320,
+				name: "gate",
+				input: /*bang*/ ctx[7]
+			}
+		});
+
+	patch5 = new Patch({
 			props: {
 				label: "out",
 				x: 60,
@@ -143,6 +188,14 @@ function create_default_slot(ctx) {
 			__sv.create_component(patch0.$$.fragment);
 			t4 = __sv.space();
 			__sv.create_component(patch1.$$.fragment);
+			t5 = __sv.space();
+			__sv.create_component(patch2.$$.fragment);
+			t6 = __sv.space();
+			__sv.create_component(patch3.$$.fragment);
+			t7 = __sv.space();
+			__sv.create_component(patch4.$$.fragment);
+			t8 = __sv.space();
+			__sv.create_component(patch5.$$.fragment);
 		},
 		m(target, anchor) {
 			__sv.mount_component(knob0, target, anchor);
@@ -156,6 +209,14 @@ function create_default_slot(ctx) {
 			__sv.mount_component(patch0, target, anchor);
 			__sv.insert(target, t4, anchor);
 			__sv.mount_component(patch1, target, anchor);
+			__sv.insert(target, t5, anchor);
+			__sv.mount_component(patch2, target, anchor);
+			__sv.insert(target, t6, anchor);
+			__sv.mount_component(patch3, target, anchor);
+			__sv.insert(target, t7, anchor);
+			__sv.mount_component(patch4, target, anchor);
+			__sv.insert(target, t8, anchor);
+			__sv.mount_component(patch5, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
@@ -195,9 +256,9 @@ function create_default_slot(ctx) {
 			}
 
 			knob3.$set(knob3_changes);
-			const patch1_changes = {};
-			if (dirty & /*envelope*/ 2) patch1_changes.output = /*envelope*/ ctx[1];
-			patch1.$set(patch1_changes);
+			const patch5_changes = {};
+			if (dirty & /*envelope*/ 2) patch5_changes.output = /*envelope*/ ctx[1];
+			patch5.$set(patch5_changes);
 		},
 		i(local) {
 			if (current) return;
@@ -207,6 +268,10 @@ function create_default_slot(ctx) {
 			__sv.transition_in(knob3.$$.fragment, local);
 			__sv.transition_in(patch0.$$.fragment, local);
 			__sv.transition_in(patch1.$$.fragment, local);
+			__sv.transition_in(patch2.$$.fragment, local);
+			__sv.transition_in(patch3.$$.fragment, local);
+			__sv.transition_in(patch4.$$.fragment, local);
+			__sv.transition_in(patch5.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
@@ -216,6 +281,10 @@ function create_default_slot(ctx) {
 			__sv.transition_out(knob3.$$.fragment, local);
 			__sv.transition_out(patch0.$$.fragment, local);
 			__sv.transition_out(patch1.$$.fragment, local);
+			__sv.transition_out(patch2.$$.fragment, local);
+			__sv.transition_out(patch3.$$.fragment, local);
+			__sv.transition_out(patch4.$$.fragment, local);
+			__sv.transition_out(patch5.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
@@ -230,6 +299,14 @@ function create_default_slot(ctx) {
 			__sv.destroy_component(patch0, detaching);
 			if (detaching) __sv.detach(t4);
 			__sv.destroy_component(patch1, detaching);
+			if (detaching) __sv.detach(t5);
+			__sv.destroy_component(patch2, detaching);
+			if (detaching) __sv.detach(t6);
+			__sv.destroy_component(patch3, detaching);
+			if (detaching) __sv.detach(t7);
+			__sv.destroy_component(patch4, detaching);
+			if (detaching) __sv.detach(t8);
+			__sv.destroy_component(patch5, detaching);
 		}
 	};
 }
@@ -259,7 +336,7 @@ function create_fragment(ctx) {
 		p(ctx, [dirty]) {
 			const faceplate_changes = {};
 
-			if (dirty & /*$$scope, envelope, state*/ 131) {
+			if (dirty & /*$$scope, envelope, state*/ 16387) {
 				faceplate_changes.$$scope = { dirty, ctx };
 			}
 
@@ -288,9 +365,38 @@ function instance($$self, $$props, $$invalidate) {
 		release: 1
 	} } = $$props;
 
+	let anode = new Tone.Waveform(512);
+
+	// let anode = new Signal(100, "frequency")
+	let dnode = new Tone.Waveform(512);
+
+	let snode = new Tone.Waveform(512);
+	let rnode = new Tone.Waveform(512);
+	let connected = false;
 	const envelope = new Tone.Envelope(state.attack, state.decay, state.sustain, state.release);
 
+	const remap = (num, in_min, in_max, out_min, out_max) => {
+		return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+	};
+
+	const onConnect = nodes => {
+		if (nodes) {
+			connected = true;
+		} else {
+			connected = false; // console.log(anode.getValue())
+		}
+	};
+
 	const bang = new Bang((time, bangAttack, bangRelease) => {
+			// console.log(anode.getValue())
+			console.log(rnode.getValue()[0]);
+
+			if (connected) {
+				let releaseVal = Math.round(remap(rnode.getValue()[0], 0, 100, 0, 5));
+			}
+
+			$$invalidate(0, state.release = releaseVal, state);
+
 			if (bangAttack && bangRelease) {
 				envelope.triggerAttackRelease(0.05, time);
 			} else if (bangAttack) {
@@ -345,6 +451,11 @@ function instance($$self, $$props, $$invalidate) {
 	return [
 		state,
 		envelope,
+		anode,
+		dnode,
+		snode,
+		rnode,
+		onConnect,
 		bang,
 		knob0_value_binding,
 		knob1_value_binding,
